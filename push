@@ -1,2 +1,41 @@
 git push for local to rep
 
+[root@ip-172-31-24-131 my-project]# touch push
+[root@ip-172-31-24-131 my-project]# vim push
+[root@ip-172-31-24-131 my-project]# ls
+ab      css  file   file10   file2  file4   fonts  index1.html  push
+chakri  f1   file1  file123  file3  fileab  img    index.html   trail
+[root@ip-172-31-24-131 my-project]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        push
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-24-131 my-project]# git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+[root@ip-172-31-24-131 my-project]# git add .
+[root@ip-172-31-24-131 my-project]# git commit -m "push"
+[master 5546d20] push
+ 1 file changed, 2 insertions(+)
+ create mode 100644 push
+[root@ip-172-31-24-131 my-project]# ls
+ab      css  file   file10   file2  file4   fonts  index1.html  push
+chakri  f1   file1  file123  file3  fileab  img    index.html   trail
+[root@ip-172-31-24-131 my-project]# git push
+Username for 'https://github.com': ychakrapani
+Password for 'https://ychakrapani@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ychakrapani/my-project.git
+   94e02c1..5546d20  master -> master
+
