@@ -1,5 +1,5 @@
 From tomcat:9
 Maintainer Sonal
-ADD HTML_20Report (1).zip /usr/local/tomcat/webapps
+ADD HTML_20Report (1).zip  /usr/local/tomcat/webapps
 CMD ["catalina.sh", "run"]
 EXPOSE 8080
